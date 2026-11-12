@@ -3,23 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Titan Fitness: gimnasio, entrenamiento personalizado, equipos modernos y planes para alcanzar tus objetivos.">
     <title>Titan Fitness</title>
-    <link rel="stylesheet" href="css/estilos.css">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Estilos personalizados -->
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-    <img src="img/logo.jpeg" alt="Logo Titan Fitness">
-</div>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="pages/nosotros.html">Nosotros</a>
-            <a href="pages/servicios.html">Servicios</a>
-            <a href="pages/planes.html">Planes</a>
-            <a href="pages/galeria.html">Galeria</a>
-            <a href="pages/contacto.html">Contacto</a>
-        </nav>
-    </header>
+
+    <div class="logo">
+        <img src="img/logo.jpeg" alt="Logo Titan Fitness">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!-- Botón para celulares -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuTitan"
+            aria-controls="menuTitan"
+            aria-expanded="false"
+            aria-label="Abrir menú">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="menuTitan">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/planes.html">Planes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/galeria.html">Galería</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
     <main>
     <section>
         <h2>
@@ -92,6 +139,8 @@
     </div>
 
 </footer>
-    
+     <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

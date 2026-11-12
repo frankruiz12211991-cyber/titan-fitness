@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto - Titan Fitness</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Estilos personalizados -->
+<link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
@@ -34,20 +37,39 @@
 
     <form class="formulario-contacto">
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
-        <label for="telefono">Teléfono:</label>
-<input type="tel" id="telefono" placeholder="Escribe tu teléfono" required>
+    <label for="nombre">Nombre:</label>
+    <input type="text"
+           id="nombre"
+           name="nombre"
+           placeholder="Escribe tu nombre"
+           autocomplete="name"
+           required>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" placeholder="Escribe tu correo" required>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel"
+           id="telefono"
+           name="telefono"
+           placeholder="Escribe tu teléfono"
+           autocomplete="tel"
+           required>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+    <label for="correo">Correo:</label>
+    <input type="email"
+           id="correo"
+           name="correo"
+           placeholder="Escribe tu correo"
+           autocomplete="email"
+           required>
 
-        <button type="submit">Enviar</button>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje"
+              required></textarea>
 
-    </form>
+    <button type="submit">Enviar</button>
+
+</form>
 
 
     </section>
@@ -56,6 +78,7 @@
 <footer>
     <p>&copy; 2026 Titan Fitness - Todos los derechos reservados.</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>

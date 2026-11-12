@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
 body {
     margin: 0;
     background-color: #0d0d0d;
@@ -159,11 +160,13 @@ section.servicios {
     object-fit: cover;
     border: 2px solid #d4af37;
     border-radius: 8px;
-    transition: transform 0.3s;
-    .imagenes-galeria img:hover {
+    transition: transform 0.3s ease;
+}
+
+.imagenes-galeria img:hover {
     transform: scale(1.05);
 }
-}
+
     .contacto {
     padding: 80px 10%;
     color: white;
@@ -511,4 +514,147 @@ section.nosotros {
 .nosotros p {
     max-width: 100%;
 }
+}
+/* MENÚ BOOTSTRAP - TITAN FITNESS */
+
+/* Enlaces del menú */
+header .navbar .nav-link {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+header .navbar .nav-link:hover,
+header .navbar .nav-link:focus {
+    color: #d4af37;
+}
+
+/* Botón del menú móvil */
+header .navbar-toggler {
+    border: 2px solid #d4af37;
+    box-shadow: none;
+}
+
+/* Diseño para celulares */
+@media (max-width: 991.98px) {
+
+    header {
+        padding: 12px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 120px;
+        height: 60px;
+    }
+
+    header .navbar {
+        width: 100%;
+    }
+
+    header .navbar-toggler {
+        margin-left: auto;
+    }
+
+    header .navbar-collapse {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar .nav-link {
+        color: #d4af37;
+        padding: 10px;
+        margin-left: 0;
+    }
+}
+/* =================================
+   5 ANIMACIONES CSS - TITAN FITNESS
+================================= */
+
+/* 1. Entrada del logo */
+@keyframes animacionLogo {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo img {
+    animation: animacionLogo 1s ease;
+}
+
+/* 2. Entrada del título */
+@keyframes animacionTitulo {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main > section:first-child h2 {
+    animation: animacionTitulo 1.2s ease;
+}
+
+/* 3. Aparición del texto */
+@keyframes animacionTexto {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main > section:first-child p {
+    animation: animacionTexto 2s ease;
+}
+
+/* 4. Movimiento del botón */
+@keyframes animacionBoton {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+main > section:first-child > a {
+    animation: animacionBoton 2s ease-in-out infinite;
+}
+
+/* 5. Aparición de características */
+@keyframes animacionCaracteristicas {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.caracteristicas > div {
+    animation: animacionCaracteristicas 1.2s ease both;
+}
+* FUENTES PERSONALIZADAS */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
